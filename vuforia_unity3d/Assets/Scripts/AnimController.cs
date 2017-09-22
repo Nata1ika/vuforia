@@ -20,11 +20,14 @@ public class AnimController : MonoBehaviour
         if (name == _colliderObjName)
         {
             _anim.Play(_animName);
+            _audio.Play();
         }
     }
+
 	
     [SerializeField] ClickController    _clickController;
     [SerializeField] string             _colliderObjName;
     [SerializeField] Animator           _anim;
     [SerializeField] string             _animName;
+    [SerializeField] AudioSource        _audio;
 }
