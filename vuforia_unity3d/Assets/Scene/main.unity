@@ -1558,7 +1558,7 @@ MonoBehaviour:
   _colliderObjName: kitten
   _anim: {fileID: 1291029641}
   _animName: Jump
-  _audio: {fileID: 0}
+  _audio: {fileID: 1939543786}
 --- !u!4 &1721518699
 Transform:
   m_ObjectHideFlags: 0
