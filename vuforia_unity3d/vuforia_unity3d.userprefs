@@ -1,9 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ClickController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ArController.cs">
     <Files>
       <File FileName="Assets\Scripts\ParticleController.cs" Line="19" Column="41" />
-      <File FileName="Assets\Scripts\ClickController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ClickController.cs" Line="9" Column="32" />
+      <File FileName="Assets\Scripts\AnimController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ArController.cs" Line="12" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
