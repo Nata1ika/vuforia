@@ -14,6 +14,10 @@ namespace Vuforia
     public class DefaultTrackableEventHandler : MonoBehaviour,
                                                 ITrackableEventHandler
     {
+
+        public System.Action<string> TrackingFoundEvent;
+        public System.Action<string> TrackingLostEvent;
+
         #region PRIVATE_MEMBER_VARIABLES
  
         private TrackableBehaviour mTrackableBehaviour;
@@ -84,6 +88,10 @@ namespace Vuforia
             }
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
+            if (TrackingFoundEvent != null)
+            {
+                TrackingFoundEvent(mTrackableBehaviour.TrackableName);
+            }
         }
 
 
@@ -105,6 +113,10 @@ namespace Vuforia
             }
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
+            if (TrackingLostEvent != null)
+            {
+                TrackingLostEvent(mTrackableBehaviour.TrackableName);
+            }
         }
 
         #endregion // PRIVATE_METHODS
